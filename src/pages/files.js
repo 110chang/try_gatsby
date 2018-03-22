@@ -6,7 +6,12 @@ export default ({data}) => (
     {data.allMarkdownRemark.edges.map(({node}) => (
       <div key={node.id}>
         <a href={node.frontmatter.path}>
-          {node.frontmatter.title}
+          <h2>
+            {node.frontmatter.title}
+            <small>
+              {node.frontmatter.date} {node.frontmatter.tags}
+            </small>
+          </h2>
         </a>
       </div>
     ))}
@@ -22,6 +27,7 @@ export const query = graphql`
             title
             date
             path
+            tags
           }
           excerpt
           timeToRead

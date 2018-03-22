@@ -2,6 +2,7 @@
 path: "/blog/my-first-post"
 title: はじめてRuby gemを作った時のメモ
 date: "2017-11-07"
+tags: ["animals", "Chicago", "zoos"]
 ---
 
 できたもの

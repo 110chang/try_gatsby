@@ -13,6 +13,9 @@ const IndexPage = () => (
       <li>
         <Link to="/files/">Go to files</Link>
       </li>
+      <li>
+        <Link to="/tags/">Go to tags</Link>
+      </li>
     </ul>
   </div>
 )
